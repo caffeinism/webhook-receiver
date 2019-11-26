@@ -3,10 +3,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-from webhooks import get_webhooks
+from webhook_receiver import get_webhooks
 webhooks = get_webhooks(app, target='gitlab', endpoint='/', token='test')
 
-from webhooks import Event
+from webhook_receiver import Event
 @webhooks.route(event=Event.PUSH)
 def github_push_hook(data):
     # some task what you want
