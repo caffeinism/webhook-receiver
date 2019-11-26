@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="webhook-receiver",
-    version="0.0.1",
+    version="0.0.2",
     license='MIT',
     author="caffeinism",
     author_email="make.dirty.code@gmail.com",

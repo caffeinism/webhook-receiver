@@ -15,7 +15,7 @@ class WebHooks:
             if event not in self.route_map:
                 abort(400, 'Event is not registered')
 
-            return self.route_map[event](get_json)
+            return self.route_map[event](get_json())
 
     def route(self, event):
         def decorator(func):
