@@ -30,22 +30,3 @@ class WebHooks:
 
     def get_event(self):
         raise NotImplementedError
-
-
-
-# (webhook -> script -> repo
-#          -> script -> repo)
-
-
-# (webhook)
-# (script -> repo)
-# (script -> repo)
-
-# (nginx-proxy)
-# (webhook -> script -> repo)
-# (webhook -> script -> repo)
-
-# TODO:
-# SSH KEY MOUNT
-# 쉘 스크립트 실행시 환경변수로 파라미터 넘겨주기
-# 
